@@ -1,0 +1,217 @@
+/**
+* You can edit this whole file.
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.44;
+}
+body{
+  background-color: var(--gray-3);
+}
+/* Contenido e informacion de la pagina*/
+.contenido {
+  
+  display: flex !important;
+  flex-direction: column !important;
+}
+/* Titulo Dogos*/
+.titulo{
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+/* Barra de navegacion*/
+.navbar {
+  position: relative;
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #20d397;
+}
+
+
+.contenn {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.navbar .contenn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Filas de contenido*/
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+.fila .columna{
+  flex-basis: 0;
+  font-size: 13px;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: .8rem !important;
+  margin: .8rem !important;
+  box-shadow: 8px 8px 6px 0 rgb(58 59 69 / 15%) !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: solid 1px var(--gray-2);
+}
+.fila .columna h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.fila .columna p{
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+/* Botones de contenido*/
+.boton{
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  background-color: #8a2be2;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+.boton img{
+  width: 15px;
+  margin-right: 11px;
+}
+/*Resoluciones*/
+@media (min-width: 393px) {
+  .contenn {
+    max-width: 851px;
+    
+  }
+  .fila .columna{
+    flex:  0 70%;
+    max-width: 960%;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  .contenn {
+    max-width: 960px;
+    
+  }
+  .fila .columna{
+    flex:  0 70%;
+    max-width: 960%;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contenn {
+    max-width: 800px;
+    
+  }.fila .columna{
+    flex:  0 30%;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contenn {
+    max-width: 900px;
+    
+  }.fila .columna{
+    flex:  0 30%;   
+    max-width: 900px;
+  }
+}
+
+
+ul{
+  margin-top: 0;
+}
+.navbar .contenn ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar .contenn ul > li > a {
+  padding: 6px 14px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 53% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+      
+}
+.navbar .contenn ul > li > a:hover, a:focus {
+  background-size: 50% 2px; 
+}
+
+.logo-nav{
+    display: flex;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.logo-nav img {
+  width: 25px;
+  margin-right: 10px;
+}
+.logo-nav span{
+  color: #ffffff;
+  font-weight: 500;
+}
+
+
